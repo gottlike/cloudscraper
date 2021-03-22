@@ -806,6 +806,7 @@ class CloudScraper(Session):
                 break
         else:
             cls.simpleException(
+                cls,
                 CloudflareIUAMError,
                 "Unable to find Cloudflare cookies. Does the site actually "
                 "have Cloudflare IUAM (I'm Under Attack Mode) enabled?"
